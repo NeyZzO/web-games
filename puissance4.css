@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.game {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.case {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    /* border: 3px solid red; */
+}
+
+.circle {
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 50%;
+    margin: 10%;
+}
+
+.circle.yellow {
+    background-color: yellow;
+}
+
+.circle.red {background-color: red;}
+
+.col:is(:hover) *.case {
+    background-color: rgb(141, 141, 49);
+}
+
+
+/* Ecran de fin */
+#endscreen {
+    /* display: none; */
+    top: -100%;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FF7E6B;
+    opacity: 80%;
+}
+
+#endscreen .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#endscreen .content h1 {
+    font-size: 5rem;
+}
+
+#endscreen .content h3 {
+    color: grey;
+    opacity: 80%;
+    font-size: 3rem;
+}
+
+#endscreen .controls button{
+    outline: none;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 1.3rem;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+#endscreen .controls button:is(:hover) {
+    background-color: rgb(165, 165, 165);
+}
+
+#endscreen .controls button:is(:active) {
+    background-color: rgb(255, 255, 255);
+}
+
+
+.timer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    color: gray;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 20px
+}

@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+#playerinfos {
+    position: absolute;
+    text-transform: uppercase;
+    color: grey;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.game {
+    width: 50vh;
+    height: 50vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #222E50;
+}
+.row {
+    display: flex;
+}
+.square {
+    cursor: pointer;
+    display: table-cell;
+    font-family: "Comic Sans MS", sans-serif;
+    font-weight: lighter;
+    background-color: #007991;
+    border: 1px solid #222E50;
+    width: calc(50vh/3);
+    height: calc(50vh/3 - 2px);
+    /* line-height: 100%; */
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-size: 11vh;
+}
+
+.square.cross {
+    cursor: not-allowed;
+    color: #439A86;
+}
+
+.square.circle {
+    cursor: not-allowed;
+    color: #E9D985;
+}
+
+/* Ecran de fin */
+#endscreen {
+    /* display: none; */
+    top: -100%;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FF7E6B;
+    opacity: 80%;
+}
+
+#endscreen .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#endscreen .content h1 {
+    font-size: 5rem;
+}
+
+#endscreen .content h3 {
+    color: grey;
+    opacity: 80%;
+    font-size: 3rem;
+}
+
+#endscreen .controls button{
+    outline: none;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 1.3rem;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+#endscreen .controls button:is(:hover) {
+    background-color: rgb(165, 165, 165);
+}
+
+#endscreen .controls button:is(:active) {
+    background-color: rgb(255, 255, 255);
+}

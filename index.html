@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h3 id="playerinfos">Player 1 turn ( X )</h3>
+    <div class="game">
+        <div class="row" id="row_1">
+            <div class="square" id="square_1" data-player=-1>O</div>
+            <div class="square" id="square_2" data-player=-1>X</div>
+            <div class="square" id="square_3" data-player=-1>O</div>
+        </div>
+        <div class="row" id="row_2">
+            <div class="square" id="square_4" data-player=-1>X</div>
+            <div class="square" id="square_5" data-player=-1>O</div>
+            <div class="square" id="square_6" data-player=-1>X</div>
+        </div>
+        <div class="row" id="row_3">
+            <div class="square" id="square_7" data-player=-1>O</div>
+            <div class="square" id="square_8" data-player=-1>X</div>
+            <div class="square" id="square_9" data-player=-1>O</div>
+        </div>
+    </div>
+    <div id="endscreen">
+        <div class="content">
+            <h1 class="result">VICTORY</h1>
+            <h3 class="winner">Victoire du joueur X</h3>
+            <div class="controls">
+                <button id="replay">Rejouer</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
